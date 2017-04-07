@@ -1,0 +1,35 @@
+{
+  "name": "fin-spellchecker",
+  "version": "1.0.0",
+  "description": "spellchecker for FIN NLP",
+  "main": "./dist/index.js",
+  "types":"./dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "spelt": "^0.0.3"
+  },
+  "devDependencies": {
+    "finnlp": "^1.1.1",
+    "spelt-gb-dict": "^1.0.1"
+  },
+  "scripts": {
+    "test": "ts-node test/test",
+    "build":"tsc",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinNLP/fin-spellchecker.git"
+  },
+  "keywords": [
+    "spellchecking"
+  ],
+  "author": "Alex Corvi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FinNLP/fin-spellchecker/issues"
+  },
+  "homepage": "https://github.com/FinNLP/fin-spellchecker#readme"
+}
